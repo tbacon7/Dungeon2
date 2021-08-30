@@ -1,0 +1,78 @@
+---Work
+Entity - Lots of Assumption That Container Exists???
+  When Entity Created you Create the Container+
+    Do we need a x,y and a container x,y, might help
+  Add Loading and Saving of Levels to Kill Off Entities Fully
+    Or Maybe a Scene Per Level???
+  Level Creates JSON - Floor:tileID, Entities:x,y,type
+  World Saves/Loads JSON -  Floor:tileID, Entities:x,y,type + properties-container
+Entity deinit - Tweens???
+  Wait for All to End Each Turn???  Or Player All Done, Then Monsters All Done???
+  Extend Tween Manager - Add Tweens to Target
+Tween Move Based on Speed
+Add Items to Monsters
+Add UI
+Optimize Dungeon/Level Config Structure
+Maybe Move Player Key Processing to Player/Entity Object
+Set Camera Move Boundry
+Add Zoom/Scroll of Camera
+Sounds
+Extend Generation
+  Monsters/Items
+  Add More Loops?
+  Send Config for Generation
+  No Corridors on the Side of Rooms
+  No Rooms on Edge of Map
+  Add Doors/Secret Doors
+  Cave Like Rooms
+  Lake/Water
+
+---Design
+Dungeon Level
+  Rooms
+  Floor - X,Y Array
+  Walkable List of Tiles
+  Entities - X,Y,Type (Item, Trap, Monster)
+  EntityStack(x,y)
+  EntityTop(x,y)
+  MoveEntity(Entity,x,y)
+  Walkable(x,y)
+World
+  Dungeon
+  CurrentLevel
+  TileMap - Floor, Light
+  Draw Entities
+  Get Input
+  Player
+Entity
+  X,Y,Z
+  Container
+  Type
+  Tile
+  Name
+  Walkable
+  Fights
+  Moves
+  Effects
+
+---Dungeon Generation
+Javascript Basic - https://craiky.github.io/tutorial/
+Javascript Brogue (Complex) - http://anderoonies.github.io/2020/03/17/brogue-generation.html
+Cool Options/Article (Not Javascript) - https://journal.stuffwithstuff.com/2014/12/21/rooms-and-mazes/
+  Also a Cool C# - https://www.odedwelgreen.com/karcero/
+Interesting - https://www.gamasutra.com/blogs/AAdonaac/20150903/252889/Procedural_Dungeon_Generation_Algorithm.php
+
+Add Cave Type Rooms
+Add Lakes
+Doors versus Openings
+
+---Phase 1
+Generate Simple Dungeon
+Monsters - Base Monster
+Player - Base Monster
+
+---Concept/Thoughts
+Figure out the Tagging Construct - Seems Cool
+Love the Log and all the Info it Provides!
+Ultima Like Long Term - Multiple Dungeons and Bigger Quest
+Pixel Dungeon - Random but with Anchor Rooms/Monsters
